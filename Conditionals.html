@@ -8,33 +8,33 @@
 </head>
 <body>
      <script>
-         var x = 0;
+        //  var x = 0;
 
-         while (x < 6){
-             x++;
-         }
-         console.log(x);
+        //  while (x < 6){
+        //      x++;
+        //  }
+        //  console.log(x);
 
-         let Esther = 30
+        //  let Esther = 30
 
-         if (Esther == 19){
-             console.log("she is beautiful")
-         }
-         else{
-             console.log("she's always the boss")
-         }
+        //  if (Esther == 19){
+        //      console.log("she is beautiful")
+        //  }
+        //  else{
+        //      console.log("she's always the boss")
+        //  }
 
-         let attendence = 30
-         if(sttendence == 30){
-             console.log("She is the best")
-         }
+        //  let attendence = 30
+        //  if(sttendence == 30){
+        //      console.log("She is the best")
+        //  } -->
 
-         else{
-             console.log("go home and come back next week")
+        //  <!-- else{
+        //      console.log("go home and come back next week")
         
 
 
-    //     function addThreeNums(w,x,y){
+    //<!-- //     function addThreeNums(w,x,y){
     //     return w+x+y;
         
     // }
@@ -60,11 +60,58 @@
 //             console.log(y)
 //     }
 //         addEvenNumbers()
-}
+//} 
 
 
 
-        
+        let animals = {
+            name: "Snake",
+            age: 6,
+            skinColour: "red",
+            place: "Lapaz",
+            gender: "female",
+            snake(){
+                console.log("snakes are strange")
+            }
+        };
+        console.log(animals)
+        concole.log(snake)
+
+
+
+
+
+
+    class Animals{
+        constructor(name,age,habitat,sound){
+            this.fname=name
+            this.age=age
+            this.habitat=habitat
+            this.sound=sound
+        }
+        breeding(name) {
+            console.log('style of breeding')
+
+        }
+    }
+
+    class seaAnimals extends Animals{
+        constructor(name,age,habitat,color,sound,swim){
+            super(name,age,habitat,color,sound);
+            this.swim = swim
+        }
+        swimming() {
+            console.log('(this.name) can swim')
+        }
+    }
+    let shark = new
+
+    let dog=new Animals("whisky",5,"land","brown","barks");
+    console.log(dog)
+    //console.log(dog.habitat)
+
+
+
     </script>
     
     <script src="Conditional.js"> </script>
