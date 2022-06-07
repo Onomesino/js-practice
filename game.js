@@ -36,7 +36,7 @@ setInterval(function (){
     var characterTop = 
     parseInt (window.getComputedStyle(character).getPropertyValue("top"));
     if (jumping==0) {
-        character.style.top = (characterTop-5)+"px";
+        character.style.top = (characterTop-3)+"px";
     }
     var blockLeft = 
     parseInt (window.getComputedStyle(block).getPropertyValue("left"));
@@ -51,12 +51,12 @@ setInterval(function (){
     } 
 },10);
 function jump () {
-    jumping = 0;
+    jumping = 1;
     let jumpCount = 0;
     var jumpInterval = setInterval(function(){
         let characterTop =
          parseInt (window.getComputedStyle(character).getPropertyValue("top"));
-         if ((characterTop>6)&&(counter<15)) {
+         if ((characterTop>6)&&(jumpCount<15)) {
             character.style.top = (characterTop-5)+"px";   
          }
          if (jumpCount>20) {
@@ -69,12 +69,4 @@ function jump () {
 
     },10);
 }
-
-
-
-
-
-
-
-
 
